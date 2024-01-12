@@ -14,31 +14,31 @@ public class Capital {
         return this.id;
     }
 
-    public void setId(UUID capitalID) {
-        this.id = UUID.randomUUID();
+    public void setId(UUID id) {
+        this.id = id;
     }
 
     public String getName() {
     	return this.name;
     }
 
-    public void setCapitaltName(String capitalName) {
-    	this.name = capitalName;
+    public void setName(String name) {
+    	this.name = name;
     }
 
     public int getPopulation() {
     	return this.population;
     }
 
-    public void setPopulation(int capitalPopulation) {
-    	this.population = capitalPopulation;
+    public void setPopulation(int population) {
+    	this.population = population;
     }
 
     public int getArea() {
     	return this.area;
     }
 
-    public void setArea(int capitalArea) {
-    	this.area = capitalArea;
+    public void setArea(int area) {
+    	this.area = area;
     }
 }

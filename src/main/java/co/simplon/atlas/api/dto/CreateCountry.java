@@ -1,27 +1,22 @@
-package co.simplon.atlas.api.entities;
-import java.util.UUID;
+package co.simplon.atlas.api.dto;
 
-public class Country {
-    private UUID id;
+//import javax.validation.constraints.NotNull;
+//import javax.validation.constraints.Size;
+//import javax.validation.constraints.Min;
+
+public class CreateCountry {
+
     private String isoCodeTwo;
     private String isoCodeThree;
     private String name;
     private int population;
     private int area;
     private String language;
+	
+	public CreateCountry() {
+	}
 
-    public Country() {
-    }
-
-    public UUID getId() {
-        return this.id;
-    }
-
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
-    public String getIsoCodeTwo() {
+	public String getIsoCodeTwo() {
     	return this.isoCodeTwo;
     }
 

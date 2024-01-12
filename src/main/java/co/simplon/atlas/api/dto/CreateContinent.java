@@ -1,24 +1,20 @@
-package co.simplon.atlas.api.entities;
+package co.simplon.atlas.api.dto;
 
-import java.util.UUID;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+import javax.validation.constraints.Min;
 
-public class Continent {
-	private UUID id;
+public class CreateContinent {
+
+	@NotNull
+	@Size(min=0, max=100)
     private String name;
+	@Min(value=1)
     private int area;
 	private int population;
-
-    public Continent() {
-    }
-    
-
-  	public UUID getId() {
-  		return this.id;
-    }
-
-    public void setId(UUID id) {
-    	this.id = id;
-    }
+	
+	public CreateContinent() {
+	}
 
     public String getName() {
     	return this.name;
@@ -27,11 +23,11 @@ public class Continent {
     public void setName(String name) {
     	this.name = name;
     }
-      
+    
     public void setPopulation(int population) {
     	this.population = population;
     }
-      
+    
     public int getPopulation() {
     	return this.population;
     }
